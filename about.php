@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php 
+$current = 'about';
+include 'header.php'; 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
