@@ -10,7 +10,8 @@ and open the template in the editor.
 
 .current{
     
-    background-color: pink;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
 body{
@@ -21,8 +22,12 @@ body{
     background-color: white!important;
 }
 
-.nav-item{
-    color: black;
+/*.nav-item{
+    color: #00cc00;
+}*/
+
+.navbar-light .navbar-nav .nav-link{
+    color: #00cc00 !important;
 }
 
 .navbar-brand img{
@@ -41,17 +46,10 @@ body{
     background-color: white;
 }
 
-nav{
-    background-color: white;
-}
 
-.display-3 {
-color: red;
-}
 
-.display-3:hover {
-color: green;
-}
+
+
 
 
 
