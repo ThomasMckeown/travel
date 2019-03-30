@@ -8,22 +8,22 @@
     <title>Heroic Features - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom styles for this template -->
-    <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="../css/heroic-features.css" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 
 </head>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="images/TAlogo.jpg" alt=""/>
+        <a class="navbar-brand" href="home.php">
+            <img src="../images/TAlogo.jpg" alt=""/>
             <h1>Trip Deceiver</h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                     echo 'class="current"';
                 }
                 ?> class="nav-item">
-                    <a class="nav-link" href="index.php">Home
+                    <a class="nav-link" href="?action=home">Home
 <!--                                <span class="sr-only">(current)</span>-->
                     </a>
                 </li>
@@ -45,28 +45,28 @@
                     echo 'class="current"';
                 }
                 ?> class="nav-item">
-                    <a class="nav-link" href="about.php">About</a>
+                    <a class="nav-link" href="?action=about">About</a>
                 </li>
                 <li <?php
                 if ($current == 'travel') {
                     echo 'class="current"';
                 }
                 ?> class="nav-item">
-                    <a class="nav-link" href="travel.php">Travel</a>
+                    <a class="nav-link" href="?action=travel">Travel</a>
                 </li>
                 <li <?php
                     if ($current == 'contact') {
                         echo 'class="current"';
                     }
                     ?> class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact</a>
+                    <a class="nav-link" href="?action=contact">Contact</a>
                 </li>
                 <li <?php
                     if ($current == 'login') {
                         echo 'class="current"';
                     }
                     ?> class="nav-item">
-                    <a class="nav-link" href="login_index.php">Login</a>
+                    <a class="nav-link" href="?action=login">Login</a>
                 </li>
             </ul>
         </div>

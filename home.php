@@ -16,15 +16,15 @@ include 'header.php';
             <!-- Jumbotron Header -->
             <header class="jumbotron my-4">
 <!--                <img src="images/index.jpg" alt=""/>-->
-                <h1 class="display-3">A Warm Welcome!</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-                <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+                <h1 class="display-3">Welcome!</h1>
+                <p class="lead">Welcome to Trip Deceiver, click the Where to link or the travel page<br>to get started!</p>
+                <a href="travel.php" class="btn btn-light">Where to?</a>
             </header>
 
             <!-- Page Features -->
             <div class="card-columns">
                 <div class="card">
-                    <img src="images/claridges.jpg" class="card-img-top" alt="...">
+                    <img src="../images/claridges.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title that wraps to a new line</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -41,7 +41,7 @@ include 'header.php';
                     </blockquote>
                 </div>
                 <div class="card">
-                    <img src="images/claridges.jpg" class="card-img-top" alt="...">
+                    <img src="../images/claridges.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -66,7 +66,7 @@ include 'header.php';
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/claridges.jpg" class="card-img-top" alt="...">
+                    <img src="../images/claridges.jpg" class="card-img-top" alt="...">
                 </div>
                 <div class="card p-3 text-right">
                     <blockquote class="blockquote mb-0">
@@ -96,8 +96,8 @@ include 'header.php';
         ?>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 
