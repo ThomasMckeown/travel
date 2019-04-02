@@ -8,26 +8,28 @@ $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
     if ($action == NULL) {
-        $action = 'home';
+        $action = 'travel';
     }
+    
 }
 
 if ($action == 'home') {
 
-    include('../home.php');
+    include('../view/index.php');
 }
 
 if ($action == 'about') {
 
-    include('../about.php');
+    include('../view/about.php');
 }
 
 if ($action == 'contact') {
 
-    include('../contact.php');
+    include('../view/contact.php');
 }
 
 if ($action == 'travel') {
+    $action = NULL;
     // Get the current category ID
     $categoryID = filter_input(INPUT_GET, 'categoryID', FILTER_VALIDATE_INT);
     if ($categoryID == NULL || $categoryID == FALSE) {
@@ -40,12 +42,12 @@ if ($action == 'travel') {
     $trips = get_trips_by_category($categoryID);
 
     // Display the trip list
-    include('../travel.php');
+    include('../view/travel.php');
 }
 
 if ($action == 'login') {
 
-    include('../login_index.php');
+    include('../view/login_index.php');
 }
 
 else if ($action == 'show_edit_form') {

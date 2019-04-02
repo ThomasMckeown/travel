@@ -18,7 +18,7 @@ include 'header.php';
 <!--                <img src="images/index.jpg" alt=""/>-->
                 <h1 class="display-3">Welcome!</h1>
                 <p class="lead">Welcome to Trip Deceiver, click the Where to link or the travel page<br>to get started!</p>
-                <a href="travel.php" class="btn btn-light">Where to?</a>
+                <a href="../controller/" class="btn btn-light">Where to?</a>
             </header>
 
             <!-- Page Features -->
@@ -96,8 +96,8 @@ include 'header.php';
         ?>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="../vendor/jquery/jquery.min.js"></script>
-        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 

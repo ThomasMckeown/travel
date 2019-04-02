@@ -15,16 +15,16 @@ and open the template in the editor.
 }
 
 body{
-    background-color: pink;
+    background-color: yellow;
 }
 
 .bg-light {
     background-color: white!important;
 }
 
-/*.nav-item{
+.nav-item{
     color: #00cc00;
-}*/
+}
 
 .navbar-light .navbar-nav .nav-link{
     color: #00cc00 !important;
@@ -61,7 +61,7 @@ body{
 
 @media (min-width: 576px) {
     .jumbotron2 {
-        padding: 4rem 2rem;
+        padding: 0.5rem 2rem;
     }
 }
 
@@ -69,12 +69,58 @@ body{
     padding-right: 0;
     padding-left: 0;
     border-radius: 0;
+    
 }
 
 .jumbotron2{
-    background-image: url(../images/travel2.jpg);
+/*    background-image: url(../images/index.jpg);*/
+    background-color: whitesmoke;
     background-size: cover;
+    max-height:  100px;
+    
 }
+
+table {
+    border: 1px solid #e9ecef;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+th, h2{
+    color: #00cc00;
+    
+}
+
+
+.page_lead{
+    position: absolute;
+    margin-top: -4.5em;
+    left: 30em;
+
+}
+
+#edit{
+    background-color: white;
+    color: #00cc00;
+    border: none;
+    cursor: pointer;
+}
+
+#delete{
+    background-color: white;
+    color: #00cc00;
+    border: none;
+    cursor: pointer;
+}
+
+.row{
+    margin-left: 2.5em;
+}
+
+
+
+
+
 
 
 
