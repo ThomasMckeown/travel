@@ -9,13 +9,13 @@ and open the template in the editor.
 */
 
 .current{
-    
+
     background-color: whitesmoke;
     border-radius: 10px;
 }
 
 body{
-    background-color: yellow;
+    background-color: #f9fbfb;
 }
 
 .bg-light {
@@ -69,15 +69,15 @@ body{
     padding-right: 0;
     padding-left: 0;
     border-radius: 0;
-    
+
 }
 
 .jumbotron2{
-/*    background-image: url(../images/index.jpg);*/
-    background-color: whitesmoke;
+    /*    background-image: url(../images/index.jpg);*/
+    background-color: #f9fbfb;
     background-size: cover;
     max-height:  100px;
-    
+
 }
 
 table {
@@ -86,16 +86,16 @@ table {
     margin-bottom: 1em;
 }
 
-th, h2{
+th, h2, h1{
     color: #00cc00;
-    
+
 }
 
 
 .page_lead{
     position: absolute;
     margin-top: -4.5em;
-    left: 30em;
+    left: 32em;
 
 }
 
@@ -117,6 +117,90 @@ th, h2{
     margin-left: 2.5em;
 }
 
+label{
+    width: 20em;
+}
+
+
+
+
+
+
+#message {
+    display:none;
+    background: #f9fbfb;
+    color: #171818;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    height: 230px;
+}
+
+#message p {
+    padding: 2px ;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+
+}
+
+
+.invalid {
+    color: #171818;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+
+}
+
+#letter{
+    margin-top: 0;
+}
+
+#capital{
+    margin-top: 0.1em;  
+}
+
+#number{
+    margin-top: 0.2em;
+}
+
+#length{
+    margin-top: 0.3em;
+}
+
+#error{
+    margin-top: 20em;
+    color: red;
+    position: absolute;
+    margin-left: 25em;
+}
+
+#success{
+    color: green;
+    margin-top: 25.5em;
+    position: absolute;
+    margin-left: 25em;
+}
+
+#reg_error{
+    color: red;
+    margin-top: 25.5em;
+    position: absolute;
+    margin-left: 25em;
+}
 
 
 

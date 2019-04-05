@@ -67,7 +67,7 @@
                         echo 'class="current"';
                     }
                     ?> class="nav-item">
-                    <a class="nav-link" href="../controller/?action=login">Login</a>
+                    <a class="nav-link" href="../controller/?action=login">Logout</a>
                 </li>
             </ul>
         </div>

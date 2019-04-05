@@ -49,7 +49,7 @@ include 'header.php';
                             <td><?php echo $trip['trip_desc']; ?></td>
                             <td><?php echo $trip['trip_rating']; ?></td>
                             <td class="right"><?php echo $trip['trip_price']; ?></td>
-                            <td><form action="." method="post">
+<!--                            <td><form action="." method="post">
                                     <input type="hidden" name="action"
                                            value="show_edit_form">
                                     <input type="hidden" name="tripID"
@@ -66,15 +66,15 @@ include 'header.php';
                                     <input type="hidden" name="categoryID"
                                            value="<?php echo $trip['category_FK']; ?>">
                                     <input id="delete" type="submit" value="Delete">
-                                </form></td>
+                                </form></td>-->
                         </tr>
                     </tbody>
                     <?php endforeach; ?>
             </table>
 
             
-            <p><a href="?action=show_add_form">Add Trip</a></p>
-            <p><a href="?action=list_categories">List Categories</a></p>
+<!--            <p><a href="?action=show_add_form">Add Trip</a></p>
+            <p><a href="?action=list_categories">List Categories</a></p>-->
         </section>
     </div>
         <!-- /.row -->
@@ -87,8 +87,8 @@ include 'header.php';
     ?>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

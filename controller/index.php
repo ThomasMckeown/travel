@@ -50,6 +50,15 @@ if ($action == 'login') {
     include('../view/login_index.php');
 }
 
+if ($action == 'register') {
+
+    include('../view/register.php');
+}
+
+if($action == 'index_login'){
+    include('../login_view/index.php');
+}
+
 else if ($action == 'show_edit_form') {
     $tripID = filter_input(INPUT_POST, 'tripID', FILTER_VALIDATE_INT);
     if ($tripID == NULL || $tripID == FALSE) {

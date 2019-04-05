@@ -1,6 +1,20 @@
 <?php
+
+// Check user login or not
+if (!isset($_SESSION['logged_in'])) {
+    //header('Location: ../controller/?action=index_login');
+}
+
+// logout
+if (isset($_POST['but_logout'])) {
+    session_destroy();
+    //header('Location: ../controller/?action=index_login');
+}
+?>
+
+<?php
 $current = 'home';
-include 'header.php';
+include 'login_header.php';
 ?>
 
 <!DOCTYPE html>

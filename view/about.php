@@ -1,6 +1,6 @@
-<?php 
+<?php
 $current = 'about';
-include 'header.php'; 
+include 'header.php';
 ?>
 
 <!DOCTYPE html>
@@ -79,13 +79,13 @@ include 'header.php';
         </div>
         <!-- /.container -->
 
-         <?php
+        <?php
         include 'footer.php';
         ?>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 
