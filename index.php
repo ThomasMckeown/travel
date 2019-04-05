@@ -2,7 +2,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    
+    <script> 
+$(document).ready(function(){
+  $(".flip").click(function(){
+    $(".panel").slideToggle("slow");
+  });
+});
 
+$(document).ready(function(){
+  $(".flip2").click(function(){
+    $(".panel2").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $(".flip3").click(function(){
+    $(".panel3").slideToggle("slow");
+  });
+});
+
+</script>
+    
     <body>
 
         <h1>Hello World</h1>
@@ -78,6 +98,100 @@
         </div>
         <!-- /.container -->
 
+        <div class="container2">
+  <div class="profile large">
+    <div class="cover">
+        <img src="images/hotel1jpg.jpg" alt=""/>
+      <div class="layer">
+        <div class="loader"></div>
+      </div><a class="image-wrapper" href="#">
+        <form id="coverForm" action="#">
+          <input class="hidden-input" id="changeCover" type="file"/>
+          <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+        </form></a>
+    </div>
+    <div class="user-info">
+      <div class="profile-pic">
+          <img src="images/profilePicture1.jpg" alt=""/>
+        <div class="layer">
+          <div class="loader"></div>
+        </div><a class="image-wrapper" href="#">
+          <form id="profilePictureForm" action="#">
+            <input class="hidden-input" id="changePicture" type="file"/>
+            <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
+          </form></a>
+      </div>
+      <div class="username">
+        <div class="flip">v</div>
+        <div class="panel">Wonderful location. Would go again</div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+                <div class="container2">
+  <div class="profile2 large">
+    <div class="cover">
+        <img src="images/hotel1jpg.jpg" alt=""/>
+      <div class="layer">
+        <div class="loader"></div>
+      </div><a class="image-wrapper" href="#">
+        <form id="coverForm" action="#">
+          <input class="hidden-input" id="changeCover" type="file"/>
+          <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+        </form></a>
+    </div>
+    <div class="user-info">
+      <div class="profile-pic">
+          <img src="images/profilePicture1.jpg" alt=""/>
+        <div class="layer">
+          <div class="loader"></div>
+        </div><a class="image-wrapper" href="#">
+          <form id="profilePictureForm" action="#">
+            <input class="hidden-input" id="changePicture" type="file"/>
+            <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
+          </form></a>
+      </div>
+      <div class="username">
+        <div class="flip2">v</div>
+        <div class="panel2">Wonderful location. Would go again</div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+                <div class="container2">
+  <div class="profile3 large">
+    <div class="cover">
+        <img src="images/hotel1jpg.jpg" alt=""/>
+      <div class="layer">
+        <div class="loader"></div>
+      </div><a class="image-wrapper" href="#">
+        <form id="coverForm" action="#">
+          <input class="hidden-input" id="changeCover" type="file"/>
+          <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+        </form></a>
+    </div>
+    <div class="user-info">
+      <div class="profile-pic">
+          <img src="images/profilePicture1.jpg" alt=""/>
+        <div class="layer">
+          <div class="loader"></div>
+        </div><a class="image-wrapper" href="#">
+          <form id="profilePictureForm" action="#">
+            <input class="hidden-input" id="changePicture" type="file"/>
+            <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
+          </form></a>
+      </div>
+      <div class="username">
+          <div class="flip3">v</div>
+        <div class="panel3">Wonderful location. Would go again</div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <br><br><br><br><br>
         <!-- Footer -->
         <footer class="py-5 bg-dark">
             <div class="container">
