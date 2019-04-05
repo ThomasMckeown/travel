@@ -11,6 +11,8 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
