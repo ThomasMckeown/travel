@@ -202,6 +202,30 @@ label{
     margin-left: 25em;
 }
 
+#but_logout{
+    border: none;
+    background-color: white;
+    color: #00cc00;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+#back_login{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+/*.login_welcome{
+    margin-top: 10em;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}*/
+
+
+
 
 
 

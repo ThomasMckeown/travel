@@ -33,7 +33,7 @@ if (isset($_POST['register'])) {
     //Construct the SQL statement and prepare it.
     $sql = "SELECT COUNT(email) AS num FROM users WHERE email = :email";
     $sql2 = "SELECT COUNT(username) AS num FROM users WHERE username = :username";
-    
+
     $stmt = $pdo->prepare($sql);
     $stmt2 = $pdo->prepare($sql2);
 
@@ -55,34 +55,38 @@ if (isset($_POST['register'])) {
     //the scope of this tutorial.
     if ($row2['num'] > 0) {
         echo '<p id="reg_error">That username already exists!</p>';
-    }else if($row['num'] > 0){
+    } else if ($row['num'] > 0) {
         echo '<p id="reg_error">That email already exists!</p>';
-    }else{
+    } else {
 
 
-    //Hash the password as we do NOT want to store our passwords in plain text.
-    $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
+        //Hash the password as we do NOT want to store our passwords in plain text.
+        $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
 
-    //Prepare our INSERT statement.
-    //Remember: We are inserting a new row into our users table.
-    $sql3 = "INSERT INTO users (email, username, password) VALUES (:email, :username, :password)";
-    $stmt3 = $pdo->prepare($sql3);
+        //Prepare our INSERT statement.
+        //Remember: We are inserting a new row into our users table.
+        $sql3 = "INSERT INTO users (email, username, password) VALUES (:email, :username, :password)";
+        $stmt3 = $pdo->prepare($sql3);
 
-    //Bind our variables.
-    $stmt3->bindValue(':email', $email);
-    $stmt3->bindValue(':username', $username);
-    $stmt3->bindValue(':password', $passwordHash);
+        //Bind our variables.
+        $stmt3->bindValue(':email', $email);
+        $stmt3->bindValue(':username', $username);
+        $stmt3->bindValue(':password', $passwordHash);
 
-    //Execute the statement and insert the new account.
-    $result = $stmt3->execute();
+        //Execute the statement and insert the new account.
+        $result = $stmt3->execute();
 
-    //If the signup process is successful.
-    if ($result) {
-        //What you do here is up to you!
-        echo '<p id="success">Thank you for registering with our website.</p>';
-    }
+        //If the signup process is successful.
+        if ($result) {
+            //What you do here is up to you!
+            echo '<p id="success">Thank you ' . $username . ', for registering with our website.</p>';
+        }
     }
 }
+
+
+//$username = $_POST['username'];
+
 ?>
 
 <?php
@@ -102,17 +106,17 @@ include 'header.php';
         <form action="../controller/?action=register" method="post">
             <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" class="form-control" required id="email" name="email"  placeholder="Enter email">
+                <input type="email" class="form-control" required id="email" name="email"  placeholder="Enter Email">
 
             </div>
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" required id="username" name="username"  placeholder="username">
+                <input type="text" class="form-control" required id="username" name="username"  placeholder="Enter a Username">
 
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" required id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
+                <input type="password" class="form-control" required id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter a Password">
             </div>
 
             <div id="message">
@@ -129,13 +133,13 @@ include 'header.php';
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <input type="submit" name="register" value="register" class="btn btn-primary">
+            <input type="submit" name="register" value="Register" class="btn btn-primary">
         </form>
 
 
     </div>
 
-    <button><a href="../controller/?action=login">back to login</a></button>
+    <button id="back_login"><a style="text-decoration: none; color: #00cc00;" href="../controller/?action=login">Back to Login</a></button>
 
     <br><br><br><br><br><br><br>
 

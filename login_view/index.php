@@ -1,19 +1,32 @@
+
+
 <?php
 
-// Check user login or not
-if (!isset($_SESSION['logged_in'])) {
-    //header('Location: ../controller/?action=index_login');
+
+//$username = $_POST['username'];
+
+/**
+ * Start the session.
+ */
+session_start();
+
+/**
+ * Check if the user is logged in.
+ */
+if(!isset($_SESSION['user_id']) || !isset($_SESSION['logged_in'])){
+    //User not logged in. Redirect them back to the login.php page.
+    header('Location: ../controller?action=login');
+    exit;
 }
 
 // logout
 if (isset($_POST['but_logout'])) {
     session_destroy();
-    //header('Location: ../controller/?action=index_login');
+    header('Location: ../controller?action=login');
 }
-?>
 
-<?php
-$current = 'home';
+
+$current = 'index_login';
 include 'login_header.php';
 ?>
 
@@ -21,6 +34,12 @@ include 'login_header.php';
 <html lang="en">
 
     <body>
+        
+<!--        <div class="login_welcome">
+            <?php
+            echo '<p id="login">Welcome ' . $username . '.</p>';
+            ?>
+        </div>-->
 
 
 
@@ -106,7 +125,7 @@ include 'login_header.php';
         <!-- /.container -->
 
         <?php
-        include 'footer.php';
+        include '../view/footer.php';
         ?>
 
         <!-- Bootstrap core JavaScript -->

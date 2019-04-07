@@ -53,7 +53,7 @@
                     echo 'class="current"';
                 }
                 ?> class="nav-item">
-                    <a class="nav-link" href="../controller?action=travel">Travel</a>
+                    <a class="nav-link" href="../controller/?action=travel">Travel</a>
                 </li>
                 <li <?php
                     if ($current == 'contact') {
