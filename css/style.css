@@ -216,6 +216,12 @@ label{
     cursor: pointer;
 }
 
+.table_cat{
+    width: 25em;
+}
+
+
+
 /*.login_welcome{
     margin-top: 10em;
     left: 0;

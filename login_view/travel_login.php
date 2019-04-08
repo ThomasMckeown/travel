@@ -94,8 +94,8 @@ include 'login_header.php';
             </table>
 
 
-            <p><a href="?action=show_add_form">Add Trip</a></p>
-            <p><a href="?action=list_categories">List Categories</a></p>
+            <p><a style="text-decoration: none; color: #00cc00;" href="?action=show_add_form">Add Trip</a></p>
+            <p><a style="text-decoration: none; color: #00cc00;" href="?action=list_categories">List Categories</a></p>
         </section>
     </div>
     <!-- /.row -->

@@ -63,7 +63,8 @@ else if ($action == 'update_trip') {
     $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
 
     // Validate the inputs
-    if ($tripID == NULL || $tripID == FALSE ||
+    if (//$categoryID == NULL || $categoryID == FALSE ||
+            $tripID == NULL || $tripID == FALSE ||
             $code == NULL || $name == NULL ||
             $desc == NULL || $rate == NULL || 
             $price == NULL || $price == FALSE) {
@@ -92,7 +93,7 @@ else if ($action == 'delete_trip') {
 
 else if ($action == 'show_add_form') {
     $categories = get_categories();
-    include('../view/trip_add.php');
+    include('../login_view/trip_add.php');
     
 }
 
@@ -120,7 +121,7 @@ else if ($action == 'add_trip') {
 
 else if ($action == 'list_categories') {
     $categories = get_categories();
-    include('../view/category_list.php');
+    include('../login_view/category_list.php');
 } 
 
 else if ($action == 'add_category') {
@@ -132,7 +133,7 @@ else if ($action == 'add_category') {
         include('../errors/error.php');
     } else {
         add_category($name);
-        header('Location: .?action=list_categories');  // display the Category List page
+        header('Location: ?action=list_categories');  // display the Category List page
     }
 }
 
