@@ -4,104 +4,79 @@
 <html lang="en">
     
     <script> 
-$(document).ready(function(){
-  $(".flip").click(function(){
-    $(".panel").slideToggle("slow");
-  });
-});
+//$(document).ready(function(){
+//  $(".flip").click(function(){
+//    $(".panel").slideToggle("slow");
+//  });
+//});
+//
+//$(document).ready(function(){
+//  $(".flip2").click(function(){
+//    $(".panel2").slideToggle("slow");
+//  });
+//});
+//$(document).ready(function(){
+//  $(".flip3").click(function(){
+//    $(".panel3").slideToggle("slow");     
+//    });
+//  });
 
-$(document).ready(function(){
-  $(".flip2").click(function(){
-    $(".panel2").slideToggle("slow");
-  });
-});
-$(document).ready(function(){
-  $(".flip3").click(function(){
-    $(".panel3").slideToggle("slow");
-  });
-});
-
+$(document).ready(function() {
+			$(".review1").click(function() {
+				$(".displayedReview1").load("userReviews.php .review1");
+                                $(".displayedImage1").load("userImages.php .review1");
+			});
+			$(".review2").click(function() {
+				$(".displayedReview1").load("userReviews.php .review2");
+                                $(".displayedImage1").load("userImages.php .review2");
+			});
+                        $(".review3").click(function() {
+				$(".displayedReview1").load("userReviews.php .review3");
+                                $(".displayedImage1").load("userImages.php .review3");
+			});
+                    });
+$(document).ready(function() {
+                        $(".review4").click(function() {
+				$(".displayedReview2").load("userReviews.php .review4");
+                                $(".displayedImage2").load("userImages.php .review4");
+			});
+                        $(".review5").click(function() {
+				$(".displayedReview2").load("userReviews.php .review5");
+                                $(".displayedImage2").load("userImages.php .review5");
+			});
+                        $(".review6").click(function() {
+				$(".displayedReview2").load("userReviews.php .review6");
+                                $(".displayedImage2").load("userImages.php .review6");
+			});
+                    }); 
+$(document).ready(function() {
+                        $(".review7").click(function() {
+				$(".displayedReview3").load("userReviews.php .review7");
+                                $(".displayedImage3").load("userImages.php .review7");
+			});
+                        $(".review8").click(function() {
+				$(".displayedReview3").load("userReviews.php .review8");
+                                $(".displayedImage3").load("userImages.php .review8");
+			});
+                        $(".review9").click(function() {
+				$(".displayedReview3").load("userReviews.php .review9");
+                                $(".displayedImage3").load("userImages.php .review9");
+			});
+		});
+              
 </script>
     
     <body>
 
         <h1>Hello World</h1>
 
-        <!-- Page Content -->
-        <div class="container">
-
-            <!-- Jumbotron Header -->
-            <header class="jumbotron my-4">
-                <h1 class="display-3">A Warm Welcome!</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-                <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
-            </header>
-
-            <!-- Page Features -->
-            <div class="row text-center">
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.row -->
-
-        </div>
+      
         <!-- /.container -->
 
-        <div class="container2">
+        <div class="container">
   <div class="profile large">
     <div class="cover">
-        <img src="images/hotel1jpg.jpg" alt=""/>
+        <img src="reviewImages/hotel1.jpg" alt=""/>
       <div class="layer">
         <div class="loader"></div>
       </div><a class="image-wrapper" href="#">
@@ -112,7 +87,9 @@ $(document).ready(function(){
     </div>
     <div class="user-info">
       <div class="profile-pic">
-          <img src="images/profilePicture1.jpg" alt=""/>
+          
+          <div class="displayedImage1"></div>
+          <img src="reviewImages/profilePicture1.jpg" alt=""/>
         <div class="layer">
           <div class="loader"></div>
         </div><a class="image-wrapper" href="#">
@@ -122,48 +99,21 @@ $(document).ready(function(){
           </form></a>
       </div>
       <div class="username">
-        <div class="flip">v</div>
-        <div class="panel">Wonderful location. Would go again</div>
-      </div>
-    </div>
-  </div>
-</div>
+        <!--<div class="flip">v</div>-->
+        <a class="review1" href="index.php #profile-pic">First Review</a> | 
+        <a class="review2" href="index.php #profile-pic">Second Review</a> | 
+        <a class="review3" href="index.php #profile-pic">Third Review</a>
         
-                <div class="container2">
-  <div class="profile2 large">
-    <div class="cover">
-        <img src="images/hotel1jpg.jpg" alt=""/>
-      <div class="layer">
-        <div class="loader"></div>
-      </div><a class="image-wrapper" href="#">
-        <form id="coverForm" action="#">
-          <input class="hidden-input" id="changeCover" type="file"/>
-          <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
-        </form></a>
-    </div>
-    <div class="user-info">
-      <div class="profile-pic">
-          <img src="images/profilePicture1.jpg" alt=""/>
-        <div class="layer">
-          <div class="loader"></div>
-        </div><a class="image-wrapper" href="#">
-          <form id="profilePictureForm" action="#">
-            <input class="hidden-input" id="changePicture" type="file"/>
-            <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
-          </form></a>
-      </div>
-      <div class="username">
-        <div class="flip2">v</div>
-        <div class="panel2">Wonderful location. Would go again</div>
+        <div class="displayedReview1"></div>
       </div>
     </div>
   </div>
-</div>
+
         
-                <div class="container2">
-  <div class="profile3 large">
+               
+  <div class="profile large">
     <div class="cover">
-        <img src="images/hotel1jpg.jpg" alt=""/>
+        <img src="reviewImages/hotel2.jpg" alt=""/>
       <div class="layer">
         <div class="loader"></div>
       </div><a class="image-wrapper" href="#">
@@ -174,7 +124,8 @@ $(document).ready(function(){
     </div>
     <div class="user-info">
       <div class="profile-pic">
-          <img src="images/profilePicture1.jpg" alt=""/>
+          <div class="displayedImage2"></div>
+          <img src="reviewImages/profilePicture4.jpg" alt=""/>
         <div class="layer">
           <div class="loader"></div>
         </div><a class="image-wrapper" href="#">
@@ -184,12 +135,55 @@ $(document).ready(function(){
           </form></a>
       </div>
       <div class="username">
-          <div class="flip3">v</div>
-        <div class="panel3">Wonderful location. Would go again</div>
+        <a class="review4" href="index.php #profile-pic">First Review</a> | 
+        <a class="review5" href="index.php #profile-pic">Second Review</a> | 
+        <a class="review6" href="index.php #profile-pic">Third Review</a>
+        
+        <div class="displayedReview2"></div>
       </div>
     </div>
   </div>
-</div>
+
+        
+                
+  <div class="profile large">
+    <div class="cover">
+        <img src="reviewImages/hotel3.jpg" alt=""/>
+      <div class="layer">
+        <div class="loader"></div>
+      </div><a class="image-wrapper" href="#">
+        <form id="coverForm" action="#">
+          <input class="hidden-input" id="changeCover" type="file"/>
+          <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+        </form></a>
+    </div>
+    <div class="user-info">
+      <div class="profile-pic">          
+          <div class="displayedImage3"></div>
+          <img src="reviewImages/profilePicture7.jpg" alt=""/>
+        <div class="layer">
+          <div class="loader"></div>
+        </div><a class="image-wrapper" href="#">
+          <form id="profilePictureForm" action="#">
+            <input class="hidden-input" id="changePicture" type="file"/>
+            <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
+          </form></a>
+      </div>
+      <div class="username">
+          <!--<div class="flip3">v</div>-->
+        <!--<div class="panel3 test1">Wonderful location. Would go again</div>-->
+        <!--<div class="panel3">-->
+        <a class="review7" href="index.php #profile-pic">First Review</a> | 
+        <a class="review8" href="index.php #profile-pic">Second Review</a> | 
+        <a class="review9" href="index.php #profile-pic">Third Review</a>
+        <br>
+        <div class="displayedReview3"></div>
+                
+        <!--</div>-->
+      </div>
+    </div>
+  </div>
+        </div>
         
         <br><br><br><br><br>
         <!-- Footer -->
@@ -204,6 +198,11 @@ $(document).ready(function(){
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+        
+        
+        
+        
+        
     </body>
 
 </html>
