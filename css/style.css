@@ -46,11 +46,6 @@ body{
     background-color: white;
 }
 
-.container2
-{
-     max-width: 460px;
-}
-
  @keyframes spin {
 	0% {
 		transform: rotate(0deg) translate(-50%);
@@ -79,37 +74,12 @@ body{
 
 .profile {
 	.clear;
+        .center;
 	background-color: white;
 	border-radius: 2px;
 	display: block;
 	float: none;
-	margin: 5px auto;
-	overflow: hidden;
-	padding-bottom: 20px;
-	width: 400px;
-}
-
-.profile2 {
-	.clear;
-	background-color: white;
-	border-radius: 2px;
-	display: block;
-	float: none;
-        margin-top: -36.2em;
-	margin-left: 30em;
-	overflow: hidden;
-	padding-bottom: 20px;
-	width: 400px;
-}
-
-.profile3 {
-	.clear;
-	background-color: white;
-	border-radius: 2px;
-	display: block;
-	float: none;
-        margin-top: -36.2em;
-	margin-left: 57em;
+	margin: 10px auto;
 	overflow: hidden;
 	padding-bottom: 20px;
 	width: 400px;
@@ -172,11 +142,10 @@ body{
 	overflow: hidden;
 	transform: translateX(-50%) translateY(-50%);
 	width: 210px;
-	top: 0;
+	top: 0;        
 	img {
 		box-sizing: border-box;
 		height: 100%;
-		left: 50%;
 		max-height: 100%;
 		position: absolute;
 		transform: translateX(-50%);
@@ -206,7 +175,6 @@ body{
   text-align: center;
   background-color: white;
   border: solid 1px #c3c3c3;
-   margin-left: 8em;
    .center
 	.h-align(absolute);
 	border-radius: 50%;
@@ -238,7 +206,6 @@ body{
   text-align: center;
   background-color: white;
   border: solid 1px #c3c3c3;
-   margin-left: 8em;
    .center
 	.h-align(absolute);
 	border-radius: 50%;
@@ -270,7 +237,6 @@ body{
   text-align: center;
   background-color: white;
   border: solid 1px #c3c3c3;
-   margin-left: 8em;
    .center
 	.h-align(absolute);
 	border-radius: 50%;
@@ -303,7 +269,7 @@ body {
 
 .container {
 	margin: 40px auto 50px;
-/*	max-width: 960px;*/
+	max-width: 960px;
 }
 
 // mixins
