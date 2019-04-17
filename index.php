@@ -74,6 +74,7 @@ $(document).ready(function() {
         <!-- /.container -->
 
         <div class="container">
+            
   <div class="profile large">
     <div class="cover">
         <img src="reviewImages/hotel1.jpg" alt=""/>
@@ -142,9 +143,44 @@ $(document).ready(function() {
         <div class="displayedReview2"></div>
       </div>
     </div>
+      <br><br>
+      <center><h3>Live Reviews</h3></center>
+  </div>
+            
+      <div class="verticalSlider">
+    <div>
+        <img src="images/Dr-Johns-House.jpg" alt="" width="400"/>
+        <p>Great place. loved every moment!</p>
+    </div>
+      
+    <div>
+        <img src="images/Munich-Neuschwanstein-Castle.jpg" alt="" width="400"/>
+        <p>Great place. loved every moment!</p>
+        
+    </div>
+          
+    <div>
+        <img src="images/paris.jpg" alt="" width="400"/>
+        <p>Great place. loved every moment!</p>
+    </div>
+                
+                
   </div>
 
-        
+   <script type="text/javascript">
+ 
+      $('.verticalSlider').slick({
+        slidesToShow: 2,
+               slidesToScroll: 1,
+               autoplay: true,
+               autoplaySpeed: 2000,
+              vertical:true,
+               
+               infinite: true,
+               useTransform: true
+      });
+
+  </script>  
                 
   <div class="profile large">
     <div class="cover">
@@ -185,6 +221,12 @@ $(document).ready(function() {
   </div>
         </div>
         
+ 
+  
+       
+
+  
+
         <br><br><br><br><br>
         <!-- Footer -->
         <footer class="py-5 bg-dark">
