@@ -63,7 +63,7 @@ include 'login_header.php';
                 <?php foreach ($trips as $trip) : ?>
                     <tbody>
                         <tr>
-    <!--                            <th scope="row">1</th>-->
+                <!--                            <th scope="row">1</th>-->
                             <td><img src="<?php echo $trip['Image']; ?>" height="80" width="130"> </td>
                             <td><?php echo $trip['trip_code']; ?></td>
                             <td><?php echo $trip['trip_name']; ?></td>

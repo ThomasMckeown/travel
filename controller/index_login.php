@@ -101,13 +101,12 @@ else if ($action == 'add_trip') {
     $categoryID = filter_input(INPUT_POST, 'categoryID', FILTER_VALIDATE_INT);
 
  //   $target_dir = "../images";
-    
     $code = filter_input(INPUT_POST, 'code');
     $name = filter_input(INPUT_POST, 'name');
     $desc = filter_input(INPUT_POST, 'desc');
     $rate = filter_input(INPUT_POST, 'rate');
     $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
-    if ($categoryID == NULL || $categoryID == FALSE || $code == NULL ||
+    if ($categoryID == NULL || $categoryID == FALSE || $code == NULL || 
             $name == NULL || $desc == NULL || $rate == NULL || $price == NULL || $price == FALSE) {
         $error = "Invalid add trip data. Check all fields and try again.";
         include('../errors/error.php');

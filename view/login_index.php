@@ -94,10 +94,7 @@ include 'header.php';
                 <label for="password">Password</label>
                 <input type="password" class="form-control"  id="password" name="password" placeholder="Enter Password">
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
+            
             <input type="submit" name="Login" value="Login" class="btn btn-success">
             <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;" href="../controller/?action=register">Register</a></button>
         </form>

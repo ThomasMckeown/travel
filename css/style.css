@@ -220,6 +220,11 @@ label{
     width: 25em;
 }
 
+#modal_pic img{
+    width: 47em;
+    height: 17em;
+}
+
 
 
 /*.login_welcome{

@@ -90,7 +90,7 @@ if (isset($_POST['register'])) {
 ?>
 
 <?php
-$current = 'register';
+$current = 'login';
 include 'header.php';
 ?>
 
@@ -130,8 +130,8 @@ include 'header.php';
             <script src="../js/password_val.js" type="text/javascript"></script>
 
             <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">I Accept the <a href="https://tripadvisor.mediaroom.com/ie-terms-of-use">Terms of Use</a> and our <a href="https://tripadvisor.mediaroom.com/ie-privacy-policy">Privacy Policy</a> of Trip Deceiver</label>
             </div>
             <input type="submit" name="register" value="Register" class="btn btn-primary">
         </form>
