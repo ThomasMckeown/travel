@@ -5,27 +5,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Heroic Features - Start Bootstrap Template</title>
+    <title>header login</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom styles for this template -->
-    <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="../css/heroic-features.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
 </head>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="images/TAlogo.jpg" alt=""/>
+        <a class="navbar-brand" href="index.php">
+            <img src="../images/TAlogo.jpg" alt=""/>
             <h1>Trip Deceiver</h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,42 +33,42 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li <?php
-                if ($current == 'home') {
+                if ($current == 'index_login') {
                     echo 'class="current"';
                 }
                 ?> class="nav-item">
-                    <a class="nav-link" href="index.php">Home
+                    <a class="nav-link" href="../controller/index_login.php?action=index_login">Home
 <!--                                <span class="sr-only">(current)</span>-->
                     </a>
                 </li>
                 <li <?php
-                if ($current == 'about') {
+                if ($current == 'about_login') {
                     echo 'class="current"';
                 }
                 ?> class="nav-item">
-                    <a class="nav-link" href="about.php">About</a>
+                    <a class="nav-link" href="../controller/index_login.php?action=about_login">About</a>
                 </li>
                 <li <?php
-                if ($current == 'travel') {
+                if ($current == 'travel_login') {
                     echo 'class="current"';
                 }
                 ?> class="nav-item">
-                    <a class="nav-link" href="travel.php">Travel</a>
+                    <a class="nav-link" href="../controller/index_login.php?action=travel_login">Travel</a>
                 </li>
                 <li <?php
-                    if ($current == 'contact') {
-                        echo 'class="current"';
-                    }
-                    ?> class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact</a>
+                if ($current == 'contact_login') {
+                    echo 'class="current"';
+                }
+                ?> class="nav-item">
+                    <a class="nav-link" href="../controller/index_login.php?action=contact_login">Contact</a>
                 </li>
-                <li <?php
-                    if ($current == 'login') {
-                        echo 'class="current"';
-                    }
-                    ?> class="nav-item">
-                    <a class="nav-link" href="login_index.php">Login</a>
+                <li  class="nav-item">
+                    <form method='post' action="">
+                        <input id="but_logout" type="submit" value="Logout" name="but_logout">
+                    </form>
+                    
                 </li>
+
             </ul>
         </div>
     </div>

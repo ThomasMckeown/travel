@@ -9,24 +9,23 @@ and open the template in the editor.
 */
 
 .current{
-    
+
     background-color: whitesmoke;
     border-radius: 10px;
 }
 
 body{
-    background-color: pink;
+    background-color: #f9fbfb;
 }
 
 .bg-light {
     background-color: white!important;
 }
 
-/*.nav-item{
+.nav-item{
     color: #00cc00;
-}*/
-
-.navbar-light .navbar-nav .nav-link{
+}
+navbar-light .navbar-nav .nav-link{
     color: #00cc00 !important;
 }
 
@@ -45,6 +44,197 @@ body{
 .container{
     background-color: white;
 }
+
+
+.jumbotron{
+    background-image: url(../images/index.jpg);
+    background-size: cover;
+}
+
+
+.jumbotron2 {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+    .jumbotron2 {
+        padding: 0.5rem 2rem;
+    }
+}
+
+.jumbotron2-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+
+}
+
+.jumbotron2{
+    /*    background-image: url(../images/index.jpg);*/
+    background-color: #f9fbfb;
+    background-size: cover;
+    max-height:  100px;
+
+}
+
+table {
+    border: 1px solid #e9ecef;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+th, h2, h1{
+    color: #00cc00;
+
+}
+
+
+.page_lead{
+    position: absolute;
+    margin-top: -4.5em;
+    left: 32em;
+
+}
+
+#edit{
+    background-color: white;
+    color: #00cc00;
+    border: none;
+    cursor: pointer;
+}
+
+#delete{
+    background-color: white;
+    color: #00cc00;
+    border: none;
+    cursor: pointer;
+}
+
+.row{
+    margin-left: 2.5em;
+}
+
+label{
+    width: 20em;
+}
+
+
+
+
+
+
+#message {
+    display:none;
+    background: #f9fbfb;
+    color: #171818;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    height: 230px;
+}
+
+#message p {
+    padding: 2px ;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+
+}
+
+
+.invalid {
+    color: #171818;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+
+}
+
+#letter{
+    margin-top: 0;
+}
+
+#capital{
+    margin-top: 0.1em;  
+}
+
+#number{
+    margin-top: 0.2em;
+}
+
+#length{
+    margin-top: 0.3em;
+}
+
+#error{
+    margin-top: 20em;
+    color: red;
+    position: absolute;
+    margin-left: 25em;
+}
+
+#success{
+    color: green;
+    margin-top: 25.5em;
+    position: absolute;
+    margin-left: 25em;
+}
+
+#reg_error{
+    color: red;
+    margin-top: 25.5em;
+    position: absolute;
+    margin-left: 25em;
+}
+
+#but_logout{
+    border: none;
+    background-color: white;
+    color: #00cc00;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+#back_login{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.table_cat{
+    width: 25em;
+}
+
+#modal_pic img{
+    width: 47em;
+    height: 17em;
+}
+
+
+
+/*.login_welcome{
+    margin-top: 10em;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}*/
+
 
  @keyframes spin {
 	0% {
@@ -189,6 +379,7 @@ body{
 }
 
 
+
 .panel {
   padding: 50px;
   display: none;
@@ -217,7 +408,7 @@ body{
 	top: 0;
         
         
-}
+
 
 
 .panel2 {
@@ -321,5 +512,4 @@ body {
 	&.visible {
 		display: block;
 	}
-}
 
