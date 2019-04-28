@@ -4,22 +4,7 @@
 <html lang="en">
     
     <script> 
-//$(document).ready(function(){
-//  $(".flip").click(function(){
-//    $(".panel").slideToggle("slow");
-//  });
-//});
-//
-//$(document).ready(function(){
-//  $(".flip2").click(function(){
-//    $(".panel2").slideToggle("slow");
-//  });
-//});
-//$(document).ready(function(){
-//  $(".flip3").click(function(){
-//    $(".panel3").slideToggle("slow");     
-//    });
-//  });
+
 
 $(document).ready(function() {
 			$(".review1").click(function() {
@@ -106,8 +91,8 @@ $(document).ready(function() {
         <a class="review3" href="index.php #profile-pic">Third Review</a>
         
         <div class="displayedReview1"></div>
-      </div>
-    </div>
+      </div>              
+    </div>      
   </div>
 
         
@@ -143,7 +128,7 @@ $(document).ready(function() {
         <div class="displayedReview2"></div>
       </div>
     </div>
-      <br><br>
+      <br><br>   
       <center><h3>Live Reviews</h3></center>
   </div>
             
