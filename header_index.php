@@ -8,6 +8,7 @@
     <title>header index</title>
 
     <!-- Bootstrap core CSS -->
+
     
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,6 +22,10 @@
     <link href="css/heroic-features.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/tom.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
 </head>
 
@@ -60,17 +65,17 @@
                     <a class="nav-link" href="controller?action=travel">Travel</a>
                 </li>
                 <li <?php
-                    if ($current == 'contact') {
-                        echo 'class="current"';
-                    }
-                    ?> class="nav-item">
+                if ($current == 'contact') {
+                    echo 'class="current"';
+                }
+                ?> class="nav-item">
                     <a class="nav-link" href="view/contact.php?action=contact">Contact</a>
                 </li>
                 <li <?php
-                    if ($current == 'login') {
-                        echo 'class="current"';
-                    }
-                    ?> class="nav-item">
+                if ($current == 'login') {
+                    echo 'class="current"';
+                }
+                ?> class="nav-item">
                     <a class="nav-link" href="view/login_index.php?action=login">Login</a>
                 </li>
             </ul>

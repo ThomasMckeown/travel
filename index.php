@@ -51,11 +51,11 @@ include 'header_index.php';
                 </div>
             </div>
 
-            <div class="profile large">
+            <div class="profile1 large">
                 <div class="cover">
                     <img src="reviewImages/hotel1.jpg" alt=""/>
                     <div class="layer">
-                        <div class="loader"></div>
+                        
                     </div><a class="image-wrapper" href="#">
                         <form id="coverForm" action="#">
                             <input class="hidden-input" id="changeCover" type="file"/>
@@ -68,7 +68,7 @@ include 'header_index.php';
                         <div class="displayedImage1"></div>
                         <img src="reviewImages/profilePicture1.jpg" alt=""/>
                         <div class="layer">
-                            <div class="loader"></div>
+                           
                         </div><a class="image-wrapper" href="#">
                             <form id="profilePictureForm" action="#">
                                 <input class="hidden-input" id="changePicture" type="file"/>
@@ -88,11 +88,11 @@ include 'header_index.php';
 
 
 
-            <div class="profile large">
+            <div class="profile2 large">
                 <div class="cover">
                     <img src="reviewImages/hotel2.jpg" alt=""/>
                     <div class="layer">
-                        <div class="loader"></div>
+                       
                     </div><a class="image-wrapper" href="#">
                         <form id="coverForm" action="#">
                             <input class="hidden-input" id="changeCover" type="file"/>
@@ -104,7 +104,7 @@ include 'header_index.php';
                         <div class="displayedImage2"></div>
                         <img src="reviewImages/profilePicture4.jpg" alt=""/>
                         <div class="layer">
-                            <div class="loader"></div>
+                           
                         </div><a class="image-wrapper" href="#">
                             <form id="profilePictureForm" action="#">
                                 <input class="hidden-input" id="changePicture" type="file"/>
@@ -136,7 +136,7 @@ include 'header_index.php';
                 </div>
 
                 <div>
-                    <img src="images/paris.jpg" alt="" width="400"/>
+                    <img src="images/paris-2017-home.jpg" alt="" width="400"/>
                     <p>Great place. loved every moment!</p>
                 </div>
 
@@ -157,12 +157,12 @@ include 'header_index.php';
                 });
 
             </script>  
-
-            <div class="profile large">
+            <br><br>
+            <div class="profile3 large">
                 <div class="cover">
                     <img src="reviewImages/hotel3.jpg" alt=""/>
                     <div class="layer">
-                        <div class="loader"></div>
+                        
                     </div><a class="image-wrapper" href="#">
                         <form id="coverForm" action="#">
                             <input class="hidden-input" id="changeCover" type="file"/>

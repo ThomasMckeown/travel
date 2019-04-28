@@ -1,4 +1,4 @@
-:login_view/about_login.php
+
 <?php
 /**
  * Start the session.
@@ -22,197 +22,116 @@ $current = 'about_login';
 include 'login_header.php';
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
+
+
+    <link href="../slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="../slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="../slick/slick.min.js" type="text/javascript"></script>
 
     <body>
 
         <!-- Page Content -->
         <div class="container">
+
+            
 
             <!-- Jumbotron Header -->
             <header class="jumbotron2 my-4">
                 <h1 class="display-3">About</h1>
                 <p class="page_lead">Welcome to the About page, on this page<br> you will be able to learn more about us.<br>And any further information</p>
             </header>
-
-            <!-- Page Features -->
-            <div class="row text-center">
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                <center>
+                    <div class="your-class">
+                        <div>
+                            <img src="../images/paris-2017-home.jpg" alt="" width="1000"/>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
+                        <div>
+                            <img src="../images/Munich-Neuschwanstein-Castle.jpg" alt="" width="1000"/>
                         </div>
+                        <div>
+                            <img src="../images/Dr-Johns-House.jpg" alt="" width="1000"/>
+                        </div>
+
+
                     </div>
-                </div>
+                </center>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
+                <script type="text/javascript">
+                    $('.your-class').slick({
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        fade: true,
+                        cssEase: 'linear'
 
-            </div>
-            <!-- /.row -->
+                    });
+                </script>
 
-        </div>
-        <!-- /.container -->
 
-        <?php
-        include '../view/footer.php';
-        ?>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="../vendor/jquery/jquery.min.js"></script>
-        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    </body>
-
-</html>
-
-<?php include 'header.php'; ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-       
-         <link href="slick/slick.css" rel="stylesheet" type="text/css"/>
-         <link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
-        <script src="slick/slick.min.js" type="text/javascript"></script>
-
-    <body>
-
-        <!-- Page Content -->
-        <div class="container">
-
-            <!-- Jumbotron Header -->
-            <header class="jumbotron my-4">
-                
-                    <center> <div class="your-class">
-            <div>
-                <img src="images/paris.jpg" alt="" width="1000"/>
-            </div>
-            <div>
-                <img src="images/Munich-Neuschwanstein-Castle.jpg" alt="" width="1000"/>
-            </div>
-            <div>
-                <img src="images/Dr-Johns-House.jpg" alt="" width="1000"/>
-            </div>
            
-            
-        </div></center>
-
-
-        <script type="text/javascript">
-            $('.your-class').slick({
-               
-               slidesToShow: 1,
-               slidesToScroll: 1,
-               autoplay: true,
-               autoplaySpeed: 2000,
-               fade: true,
-               cssEase: 'linear'
-  
-});
-        </script>
-                
-                
-<!--                <h1 class="display-3">A Warm Welcome!</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-                <a href="#" class="btn btn-primary btn-lg">Call to action!</a>-->
-            </header>
 
             <!-- Page Features -->
             <div class="row text-center">
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+
+                        <img class="card-img-top" src="../images/1 million.jpg" alt="">
                         <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                            <h4 class="card-title">1 Milion</h4>
+                            <p class="card-text">Thank you all! We have reached 1 Million followers. Keep an eye on this page for a special sale!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+
+                        <img class="card-img-top" src="../images/world.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">New Destinations!</h4>
+                            <p class="card-text">We have just reached 10,000,000 destinations from small huts in the amazon to the biggest hotels around the world!</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
+                            <a href="../controller/" class="btn btn-primary">Find Out More!</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+
+                        <img class="card-img-top" src="../images/thailand.jpg" alt="">
                         <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                            <h4 class="card-title">Featured destination</h4>
+                            <p class="card-text">Learn more about his months featured holiday. Thailand! </p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
+                            <a href="../controller/index.php?categoryID=3" class="btn btn-primary">Find Out More!</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+                        <img class="card-img-top" src="../images/yearEstablished.png" alt="">
                         <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                            <h4 class="card-title">History</h4>
+                            <p class="card-text">Click to learn more about the company that sends you away on all these amazing adventures</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
+                            <a href="../controller/index.php?action=home" class="btn btn-primary">Find Out More!</a>
                         </div>
                     </div>
                 </div>
@@ -224,18 +143,14 @@ include 'login_header.php';
         <!-- /.container -->
 
         <!-- Footer -->
-        <footer class="py-5 bg-dark">
-            <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-            </div>
-            <!-- /.container -->
-        </footer>
+        <?php
+        include '../view/footer.php';
+        ?>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 
 </html>
-:about.php

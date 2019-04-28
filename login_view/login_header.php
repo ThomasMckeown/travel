@@ -21,6 +21,13 @@
     <link href="../css/heroic-features.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="../css/tom.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="../slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="../slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="../slick/slick.min.js" type="text/javascript"></script>
 
 
 </head>

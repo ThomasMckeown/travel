@@ -1,3 +1,4 @@
+
 <?php
 $current = 'home';
 include 'header.php';
@@ -5,6 +6,7 @@ include 'header.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 
     <body>
 
@@ -15,13 +17,15 @@ include 'header.php';
 
             <!-- Jumbotron Header -->
             <header class="jumbotron my-4">
-<!--                <img src="images/index.jpg" alt=""/>-->
                 <h1 class="display-3">Welcome!</h1>
                 <p class="lead">Welcome to Trip Deceiver, click the Where to link or the travel page<br>to get started!</p>
-                <a href="../controller/" class="btn btn-light">Where to?</a>
+                <a href="../controller/index.php" class="btn btn-light">Where to?</a>
             </header>
 
-            <!-- Page Features -->
+
+            <!-- Button trigger modal -->
+
+
             <!-- Large modal -->
             <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">Flight Discounts</button>
 
@@ -41,18 +45,17 @@ include 'header.php';
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success"><a style="text-decoration: none; color: white;" href="?categoryID=3">See Flights</a></button>
+                            <button type="button" class="btn btn-success"><a style="text-decoration: none; color: white;" href="../controller/?categoryID=3">See Flights</a></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- /.row -->
 
-        <div class="profile large">
+            <div class="profile1 large">
                 <div class="cover">
                     <img src="../reviewImages/hotel1.jpg" alt=""/>
                     <div class="layer">
-                        <div class="loader"></div>
+                        
                     </div><a class="image-wrapper" href="#">
                         <form id="coverForm" action="#">
                             <input class="hidden-input" id="changeCover" type="file"/>
@@ -65,7 +68,7 @@ include 'header.php';
                         <div class="displayedImage1"></div>
                         <img src="../reviewImages/profilePicture1.jpg" alt=""/>
                         <div class="layer">
-                            <div class="loader"></div>
+                           
                         </div><a class="image-wrapper" href="#">
                             <form id="profilePictureForm" action="#">
                                 <input class="hidden-input" id="changePicture" type="file"/>
@@ -74,9 +77,9 @@ include 'header.php';
                     </div>
                     <div class="username">
                         <!--<div class="flip">v</div>-->
-                        <a class="review1" href="#profile-pic">First Review</a> | 
-                        <a class="review2" href="#profile-pic">Second Review</a> | 
-                        <a class="review3" href="#profile-pic">Third Review</a>
+                        <a class="review1" href="index.php #profile-pic">First Review</a> | 
+                        <a class="review2" href="index.php #profile-pic">Second Review</a> | 
+                        <a class="review3" href="index.php #profile-pic">Third Review</a>
 
                         <div class="displayedReview1"></div>
                     </div>
@@ -85,11 +88,11 @@ include 'header.php';
 
 
 
-            <div class="profile large">
+            <div class="profile2 large">
                 <div class="cover">
                     <img src="../reviewImages/hotel2.jpg" alt=""/>
                     <div class="layer">
-                        <div class="loader"></div>
+                       
                     </div><a class="image-wrapper" href="#">
                         <form id="coverForm" action="#">
                             <input class="hidden-input" id="changeCover" type="file"/>
@@ -101,7 +104,7 @@ include 'header.php';
                         <div class="displayedImage2"></div>
                         <img src="../reviewImages/profilePicture4.jpg" alt=""/>
                         <div class="layer">
-                            <div class="loader"></div>
+                           
                         </div><a class="image-wrapper" href="#">
                             <form id="profilePictureForm" action="#">
                                 <input class="hidden-input" id="changePicture" type="file"/>
@@ -109,9 +112,9 @@ include 'header.php';
                             </form></a>
                     </div>
                     <div class="username">
-                        <a class="review4" href="#profile-pic">First Review</a> | 
-                        <a class="review5" href="#profile-pic">Second Review</a> | 
-                        <a class="review6" href="#profile-pic">Third Review</a>
+                        <a class="review4" href="index.php #profile-pic">First Review</a> | 
+                        <a class="review5" href="index.php #profile-pic">Second Review</a> | 
+                        <a class="review6" href="index.php #profile-pic">Third Review</a>
 
                         <div class="displayedReview2"></div>
                     </div>
@@ -133,7 +136,7 @@ include 'header.php';
                 </div>
 
                 <div>
-                    <img src="../images/paris.jpg" alt="" width="400"/>
+                    <img src="../images/paris-2017-home.jpg" alt="" width="400"/>
                     <p>Great place. loved every moment!</p>
                 </div>
 
@@ -154,12 +157,12 @@ include 'header.php';
                 });
 
             </script>  
-
-            <div class="profile large">
+            <br><br>
+            <div class="profile3 large">
                 <div class="cover">
                     <img src="../reviewImages/hotel3.jpg" alt=""/>
                     <div class="layer">
-                        <div class="loader"></div>
+                        
                     </div><a class="image-wrapper" href="#">
                         <form id="coverForm" action="#">
                             <input class="hidden-input" id="changeCover" type="file"/>
@@ -182,9 +185,9 @@ include 'header.php';
                         <!--<div class="flip3">v</div>-->
                         <!--<div class="panel3 test1">Wonderful location. Would go again</div>-->
                         <!--<div class="panel3">-->
-                        <a class="review7" href="#profile-pic">First Review</a> | 
-                        <a class="review8" href="#profile-pic">Second Review</a> | 
-                        <a class="review9" href=" #profile-pic">Third Review</a>
+                        <a class="review7" href="index.php #profile-pic">First Review</a> | 
+                        <a class="review8" href="index.php #profile-pic">Second Review</a> | 
+                        <a class="review9" href="index.php #profile-pic">Third Review</a>
                         <br>
                         <div class="displayedReview3"></div>
 
@@ -215,9 +218,28 @@ include 'header.php';
         ?>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="../vendor/jquery/jquery.min.js"></script>
-        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="js/reviews.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

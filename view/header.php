@@ -9,21 +9,25 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  
+
     <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom styles for this template -->
     <link href="../css/heroic-features.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
-    <link href="slick/slick.css" rel="stylesheet" type="text/css"/>
-    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
-    <script src="slick/slick.min.js" type="text/javascript"></script>
+
+
 
     <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/tom.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="../slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="../slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="../slick/slick.min.js" type="text/javascript"></script>
 
-  
+
+
 </head>
 
 <!-- Navigation -->
@@ -62,17 +66,17 @@
                     <a class="nav-link" href="../controller/?action=travel">Travel</a>
                 </li>
                 <li <?php
-                    if ($current == 'contact') {
-                        echo 'class="current"';
-                    }
-                    ?> class="nav-item">
+                if ($current == 'contact') {
+                    echo 'class="current"';
+                }
+                ?> class="nav-item">
                     <a class="nav-link" href="../controller/?action=contact">Contact</a>
                 </li>
                 <li <?php
-                    if ($current == 'login') {
-                        echo 'class="current"';
-                    }
-                    ?> class="nav-item">
+                if ($current == 'login') {
+                    echo 'class="current"';
+                }
+                ?> class="nav-item">
                     <a class="nav-link" href="../controller/?action=login">Login</a>
                 </li>
             </ul>

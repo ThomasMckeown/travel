@@ -15,7 +15,7 @@ and open the template in the editor.
 }
 
 body{
-    background-color: pink;
+   
 }
 
 .bg-light {
@@ -55,14 +55,45 @@ body{
 	position: absolute;
 }
 
-.profile {
-	.clear;
-        .center;
+.profile1 {
+	
 	background-color: white;
 	border-radius: 2px;
 	display: block;
 	float: none;
-        margin-top: -16em;
+        margin-top: 2em;
+        margin-left: 18em;
+        margin-bottom: 16em;
+/*	margin: 10px auto;*/
+	overflow: hidden;
+	padding-bottom: 20px;
+	width: 400px;
+        
+        
+}
+.profile2 {
+	
+	background-color: white;
+	border-radius: 2px;
+	display: block;
+	float: none;
+        margin-top: -10em;
+        margin-left: 18em;
+        margin-bottom: 16em;
+/*	margin: 10px auto;*/
+	overflow: hidden;
+	padding-bottom: 20px;
+	width: 400px;
+        
+        
+}
+.profile3 {
+	
+	background-color: white;
+	border-radius: 2px;
+	display: block;
+	float: none;
+        margin-top: -15em;
         margin-left: 18em;
         margin-bottom: 16em;
 /*	margin: 10px auto;*/
@@ -159,7 +190,7 @@ body{
  
 .verticalSlider
 {
-    margin-left: 20em;
+    margin-left: 15em;
     margin-bottom: 20em;
     margin-top: -15em;
 }

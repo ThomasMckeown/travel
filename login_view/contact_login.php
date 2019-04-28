@@ -21,11 +21,36 @@ $current = 'contact_login';
 include 'login_header.php';
 ?>
 
-<!-- Page Content -->
-<div class="container">
 
-    <!-- Jumbotron Header -->
-  <header class="jumbotron2 my-4">
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <script>
+        $(document).ready(function () {
+            $(".flip").click(function () {
+                $(".panel").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $(".flip2").click(function () {
+                $(".panel2").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $(".flip3").click(function () {
+                $(".panel3").slideToggle("slow");
+            });
+        });
+    </script>
+    <body>
+
+        <div class="container">
+        
+<header class="jumbotron2 my-4">
         <h1 class="display-3">Contact</h1>
         <p class="page_lead">Welcome to the Contact page, on this page<br> you will be able to find out how to get in contact with us.</p>
     </header>
