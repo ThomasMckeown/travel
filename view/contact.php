@@ -3,84 +3,123 @@ $current = 'contact';
 include 'header.php';
 ?>
 
-<!-- Page Content -->
-<div class="container">
 
-    <!-- Jumbotron Header -->
-    <header class="jumbotron2 my-4">
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <script>
+        $(document).ready(function () {
+            $(".flip").click(function () {
+                $(".panel").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $(".flip2").click(function () {
+                $(".panel2").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $(".flip3").click(function () {
+                $(".panel3").slideToggle("slow");
+            });
+        });
+    </script>
+    <body>
+
+        <div class="container">
+        
+<header class="jumbotron2 my-4">
         <h1 class="display-3">Contact</h1>
         <p class="page_lead">Welcome to the Contact page, on this page<br> you will be able to find out how to get in contact with us.</p>
     </header>
-
-    <!-- Page Features -->
-    <div class="row text-center">
-
-        <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+        <div class="box">
+            <div class="profile large">
+                <div class="cover">
+                    <img src="../images/telephone2.png" alt=""/>
+                    <div class="layer">
+                        <div class="loader"></div>
+                    </div><a class="image-wrapper" href="#">
+                        <form id="coverForm" action="#">
+                            <input class="hidden-input" id="changeCover" type="file"/>
+                            <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+                        </form></a>
                 </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                </div>
+
+
+
+                <center>
+                    <div class="flip">v</div>
+
+                    <div class="panel">Call: 12345678901</div>
+                </center>
+
+
+
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+        <div class="box2">
+            <div class="profile large">
+                <div class="cover">
+                    <img src="../images/email.png" alt=""/>
+                    <div class="layer">
+                        <div class="loader"></div>
+                    </div><a class="image-wrapper" href="#">
+                        <form id="coverForm" action="#">
+                            <input class="hidden-input" id="changeCover" type="file"/>
+                            <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+                        </form></a>
                 </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                </div>
+
+
+
+                <center>
+                    <div class="flip2">v</div>
+
+                    <div class="panel2">Email: trip@mail.com</div>
+                </center>
+
+
+
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+        <div class="box3">
+            <div class="profile large">
+                <div class="cover">
+                    <img src="../images/location.png" alt=""/>
+
+                    <div class="layer">
+                        <div class="loader"></div>
+                    </div>
+                    
                 </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                </div>
+
+
+
+                <center>
+                    <div class="flip3">v</div>
+
+                    <div class="panel3">Location: Dublin Rd</div>
+                </center>
+
+
+
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100">
-                <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Find Out More!</a>
-                </div>
-            </div>
         </div>
+        
+        <?php
+        include 'footer.php';
+        ?>
+        
 
-    </div>
-    <!-- /.row -->
-
-</div>
-<!-- /.container -->
-
-<?php
-include 'footer.php';
-?>
-
-<!-- Bootstrap core JavaScript -->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+        <!-- Bootstrap core JavaScript -->
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
 </html>

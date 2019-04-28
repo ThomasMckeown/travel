@@ -74,9 +74,9 @@ include 'header.php';
                     </div>
                     <div class="username">
                         <!--<div class="flip">v</div>-->
-                        <a class="review1" href="index.php #profile-pic">First Review</a> | 
-                        <a class="review2" href="index.php #profile-pic">Second Review</a> | 
-                        <a class="review3" href="index.php #profile-pic">Third Review</a>
+                        <a class="review1" href="#profile-pic">First Review</a> | 
+                        <a class="review2" href="#profile-pic">Second Review</a> | 
+                        <a class="review3" href="#profile-pic">Third Review</a>
 
                         <div class="displayedReview1"></div>
                     </div>
@@ -109,9 +109,9 @@ include 'header.php';
                             </form></a>
                     </div>
                     <div class="username">
-                        <a class="review4" href="index.php #profile-pic">First Review</a> | 
-                        <a class="review5" href="index.php #profile-pic">Second Review</a> | 
-                        <a class="review6" href="index.php #profile-pic">Third Review</a>
+                        <a class="review4" href="#profile-pic">First Review</a> | 
+                        <a class="review5" href="#profile-pic">Second Review</a> | 
+                        <a class="review6" href="#profile-pic">Third Review</a>
 
                         <div class="displayedReview2"></div>
                     </div>
@@ -182,9 +182,9 @@ include 'header.php';
                         <!--<div class="flip3">v</div>-->
                         <!--<div class="panel3 test1">Wonderful location. Would go again</div>-->
                         <!--<div class="panel3">-->
-                        <a class="review7" href="index.php #profile-pic">First Review</a> | 
-                        <a class="review8" href="index.php #profile-pic">Second Review</a> | 
-                        <a class="review9" href="index.php #profile-pic">Third Review</a>
+                        <a class="review7" href="#profile-pic">First Review</a> | 
+                        <a class="review8" href="#profile-pic">Second Review</a> | 
+                        <a class="review9" href=" #profile-pic">Third Review</a>
                         <br>
                         <div class="displayedReview3"></div>
 

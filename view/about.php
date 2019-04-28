@@ -6,15 +6,52 @@ include 'header.php';
 <!DOCTYPE html>
 <html lang="en">
 
+       
+         <link href="slick/slick.css" rel="stylesheet" type="text/css"/>
+         <link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+        <script src="slick/slick.min.js" type="text/javascript"></script>
+
     <body>
 
         <!-- Page Content -->
         <div class="container">
 
             <!-- Jumbotron Header -->
-            <header class="jumbotron2 my-4">
-                <h1 class="display-3">About</h1>
-                <p class="page_lead">Welcome to the About page, on this page<br> you will be able to learn more about us.<br>And any further information</p>
+            <header class="jumbotron my-4">
+                
+                    <center> <div class="your-class">
+            <div>
+                <img src="images/paris.jpg" alt="" width="1000"/>
+            </div>
+            <div>
+                <img src="images/Munich-Neuschwanstein-Castle.jpg" alt="" width="1000"/>
+            </div>
+            <div>
+                <img src="images/Dr-Johns-House.jpg" alt="" width="1000"/>
+            </div>
+           
+            
+        </div></center>
+
+
+        <script type="text/javascript">
+            $('.your-class').slick({
+               
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               autoplay: true,
+               autoplaySpeed: 2000,
+               fade: true,
+               cssEase: 'linear'
+  
+});
+        </script>
+                
+                
+<!--                <h1 class="display-3">A Warm Welcome!</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+                <a href="#" class="btn btn-primary btn-lg">Call to action!</a>-->
             </header>
 
             <!-- Page Features -->
@@ -78,13 +115,17 @@ include 'header.php';
         </div>
         <!-- /.container -->
 
-        <?php
-        include 'footer.php';
-        ?>
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+            </div>
+            <!-- /.container -->
+        </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="../vendor/jquery/jquery.min.js"></script>
-        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </body>
 
