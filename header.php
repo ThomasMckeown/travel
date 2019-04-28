@@ -11,15 +11,21 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
+        <!-- For vertical slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 
-<!-- Navigation -->
+ Navigation 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">
@@ -37,7 +43,7 @@
                 }
                 ?> class="nav-item">
                     <a class="nav-link" href="index.php">Home
-<!--                                <span class="sr-only">(current)</span>-->
+                                <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li <?php
