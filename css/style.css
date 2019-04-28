@@ -186,21 +186,21 @@ label{
     margin-top: 20em;
     color: red;
     position: absolute;
-    margin-left: 25em;
+    margin-left: 45em;
 }
 
 #success{
     color: green;
     margin-top: 25.5em;
     position: absolute;
-    margin-left: 25em;
+    margin-left: 45em;
 }
 
 #reg_error{
     color: red;
     margin-top: 25.5em;
     position: absolute;
-    margin-left: 25em;
+    margin-left: 45em;
 }
 
 #but_logout{
