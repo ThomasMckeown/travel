@@ -77,15 +77,15 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev
+/*.slick-prev
 {
     left: -25px;
-}
-[dir='rtl'] .slick-prev
+}*/
+/*[dir='rtl'] .slick-prev
 {
     right: -25px;
-    left: auto;
-}
+    left: auto;*/
+/*}
 .slick-prev:before
 {
     content: '←';
@@ -111,7 +111,7 @@
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-}
+}*/
 
 /* Dots */
 .slick-dotted.slick-slider
